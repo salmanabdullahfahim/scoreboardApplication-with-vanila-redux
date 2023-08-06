@@ -39,3 +39,12 @@ const reset = () => {
         type: RESET
     }
 }
+
+
+// Initial State
+
+const initialState = {
+    id: 1,
+    score: 0
+}
+
