@@ -7,6 +7,7 @@
         <title>LWS Assignment 1 - Scoreboard</title>
         <link rel="icon" type="image/x-icon" href="./image/favicon.png" />
         <link rel="stylesheet" href="./style.css" />
+        <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
     </head>
 
     <body>
@@ -26,7 +27,7 @@
                 </div>
             </header>
             <!-- matches  -->
-            <div class="all-matches container">
+            <div class="all-matches container" id="all-matches-containers">
                 <!-- Each form tag is Each row, This will render multiple times on Clicking 'Add Another Match' -->
                 <div class="match">
                     <div class="wrapper">
@@ -60,8 +61,8 @@
             </div>
             <!-- for adding another matches -->
             <div class="add_match">
-                <button class="btn lws-addMatch">Add Another Match</button>
-                <button class="lws-reset">
+                <button class="btn lws-addMatch" id="addMatchBtn">Add Another Match</button>
+                <button class="lws-reset" id="resetBtn">
                     <svg
                         fill="none"
                         width="24"
@@ -84,5 +85,6 @@
         </section>
 
         <section class="mask"></section>
+        <script src="./app.js"></script>
     </body>
 </html>
