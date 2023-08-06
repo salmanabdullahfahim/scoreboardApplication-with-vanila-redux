@@ -48,3 +48,17 @@ const initialState = {
     score: 0
 }
 
+// id generator
+
+const idGenerator = (arr)=>{
+    const maxId = arr.reduce((maxId, match)=>Math.max(maxId, match.id),-1);
+    return maxId + 1
+}
+
+
+// Reducer Function
+
+const scoreReducer = (state= initialState, action) =>{
+    
+}
+
